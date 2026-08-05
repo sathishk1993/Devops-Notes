@@ -6,3 +6,23 @@ Connect many VPCs: Transit Gateway
 Connect on-premises to AWS (Internet): Site-to-Site VPN
 Connect on-premises to AWS (Private line): Direct Connect
 Access AWS services privately: VPC Endpoints
+
+VPC Endpoint is used to connect your VPC to AWS services privately without using the Internet or NAT Gateway.
+
+There are two types:
+
+1. Interface Endpoint
+- Used for most AWS services.
+- Examples: Secrets Manager, SSM, KMS, CloudWatch, ECR.
+- It creates an Elastic Network Interface (ENI) inside your VPC.
+- Uses AWS PrivateLink.
+
+2. Gateway Endpoint
+- Used only for Amazon S3 and DynamoDB.
+- It adds a route to the VPC route table.
+- No Internet Gateway or NAT Gateway is required.
+
+Interview One-Liner:
+
+VPC Endpoints allow EC2 instances in private subnets to securely access AWS services without going through the public internet. 
+Interface Endpoints are used for most AWS services, while Gateway Endpoints are used only for S3 and DynamoDB.
