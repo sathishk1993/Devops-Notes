@@ -1,0 +1,16 @@
+Bastion Host:
+A Bastion Host is an EC2 instance deployed in a public subnet. It is used by DevOps engineers and system administrators to securely SSH into Linux servers or RDP into Windows servers that are running in private subnets. 
+It acts as a jump server and is used for server administration, troubleshooting, checking logs, restarting services, and deploying applications. It does not provide internet access to private instances.
+
+NAT Gateway:
+A NAT Gateway is an AWS managed service deployed in a public subnet. It allows EC2 instances in private subnets to access the internet for outbound traffic only.
+It is commonly used for OS updates, downloading packages, pulling Docker images, accessing external APIs, and downloading Maven or NPM dependencies. It does not allow inbound connections from the internet.
+
+Difference:
+Bastion Host is used by administrators to access private EC2 instances using SSH or RDP.
+NAT Gateway is used by private EC2 instances to access the internet without exposing them to inbound internet traffic.
+
+
+Interview One-Liner:
+
+Bastion Host provides secure administrative access to private EC2 instances, whereas NAT Gateway provides outbound internet connectivity for private EC2 instances.
