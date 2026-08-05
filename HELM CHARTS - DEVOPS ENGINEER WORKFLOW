@@ -1,6 +1,11 @@
 HELM CHARTS - DEVOPS ENGINEER WORKFLOW
 
 Step 1: Verify Helm Installation
+
+wget https://get.helm.sh/helm-v3.18.6-linux-amd64.tar.gz
+tar -xzf helm-v3.18.6-linux-amd64.tar.gz
+sudo mv linux-amd64/helm /usr/local/bin/
+
 helm version
 
 Step 2: Add Helm Repository (Example: Bitnami)
