@@ -1,0 +1,16 @@
+EBS Volume vs EBS Snapshot
+
+EBS Volume:
+- Stored at the Availability Zone (AZ) level.
+- Can be attached only to an EC2 instance in the same AZ.
+- Cannot be directly attached to an EC2 instance in another AZ.
+
+EBS Snapshot:
+- Stored at the Region level.
+- Not tied to any specific AZ.
+- Can be used to create new EBS volumes in any AZ within the same Region.
+- To use a snapshot in another Region, it must first be copied to that Region.
+
+Interview One-Liner:
+
+EBS Volumes are AZ-specific, whereas EBS Snapshots are Region-specific.
