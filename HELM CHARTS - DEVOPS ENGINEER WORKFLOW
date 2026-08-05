@@ -93,7 +93,7 @@ helm history banking-app      //View release versions
 
 Step 15: Rollback
 
-helm rollback banking-app 1
+helm rollback banking-app 1             //Restores the application to a previous version
 
 Step 16: Uninstall
 
