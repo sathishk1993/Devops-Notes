@@ -116,6 +116,17 @@ helm history banking-app
 helm rollback banking-app 1
 helm uninstall banking-app
 
+1. helm lint       → Check chart for errors
+2. helm template   → Preview Kubernetes YAML
+3. helm install    → Deploy application
+4. helm list       → Show installed releases
+5. kubectl get all → Verify Kubernetes resources
+6. helm upgrade    → Update application
+7. helm status     → Check deployment status
+8. helm history    → View release versions
+9. helm rollback   → Restore previous version
+10. helm uninstall → Remove application
+
 Real-Time DevOps Responsibilities:
 
 1. Create Helm Charts.
