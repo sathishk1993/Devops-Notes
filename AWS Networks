@@ -1,0 +1,8 @@
+Internet access: Internet Gateway
+Private subnet internet access: NAT Gateway
+Admin access: Bastion Host
+Connect two VPCs: VPC Peering
+Connect many VPCs: Transit Gateway
+Connect on-premises to AWS (Internet): Site-to-Site VPN
+Connect on-premises to AWS (Private line): Direct Connect
+Access AWS services privately: VPC Endpoints
