@@ -1,0 +1,126 @@
+HELM CHARTS - DEVOPS ENGINEER WORKFLOW
+
+Step 1: Verify Helm Installation
+helm version
+
+Step 2: Add Helm Repository (Example: Bitnami)
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+Step 3: Update Helm Repository
+helm repo update
+
+Step 4: Search Available Charts
+helm search repo nginx
+helm search repo mysql
+
+Step 5: Create a New Helm Chart
+helm create myapp
+
+This creates the following structure:
+
+myapp/
+├── Chart.yaml
+├── values.yaml
+├── charts/
+├── templates/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   ├── ingress.yaml
+│   ├── serviceaccount.yaml
+│   ├── hpa.yaml
+│   └── _helpers.tpl
+
+Step 6: Modify values.yaml
+
+Example:
+replicaCount: 2
+
+image:
+  repository: loksaieta/bankingwebapp
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 8080
+
+Step 7: Modify templates if required
+
+deployment.yaml
+service.yaml
+ingress.yaml
+configmap.yaml
+secret.yaml
+
+Step 8: Validate Helm Chart
+
+helm lint myapp
+
+Step 9: Generate Kubernetes YAML
+
+helm template myapp
+
+Step 10: Install Helm Chart
+
+helm install banking-app ./myapp
+
+Step 11: Verify Installation
+
+helm list
+
+kubectl get all
+
+Step 12: Upgrade Application
+
+helm upgrade banking-app ./myapp
+
+Step 13: Check Release Status
+
+helm status banking-app
+
+Step 14: View Release History
+
+helm history banking-app
+
+Step 15: Rollback
+
+helm rollback banking-app 1
+
+Step 16: Uninstall
+
+helm uninstall banking-app
+
+Useful Commands:
+
+helm version
+helm repo list
+helm repo update
+helm search repo nginx
+helm create myapp
+helm lint myapp
+helm template myapp
+helm install banking-app ./myapp
+helm list
+helm status banking-app
+helm upgrade banking-app ./myapp
+helm history banking-app
+helm rollback banking-app 1
+helm uninstall banking-app
+
+Real-Time DevOps Responsibilities:
+
+1. Create Helm Charts.
+2. Store Helm Charts in GitHub.
+3. Parameterize values using values.yaml.
+4. Deploy applications using Helm.
+5. Upgrade applications using helm upgrade.
+6. Roll back deployments if a release fails.
+7. Integrate Helm deployment in Jenkins/GitHub Actions.
+8. Manage different values files for Dev, QA, UAT, and Production.
+
+Interview Answer:
+
+"In our project, we package Kubernetes manifests using Helm Charts. 
+We create a chart using 'helm create', customize values in values.yaml,
+validate it using 'helm lint', preview the manifests using 'helm template', deploy using 'helm install', 
+update applications using 'helm upgrade', verify releases using 'helm status' and 'helm history',
+and perform rollbacks using 'helm rollback' whenever required. We maintain separate values files for different environments such as dev, QA, and production."
