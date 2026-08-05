@@ -1,6 +1,6 @@
 HELM CHARTS - DEVOPS ENGINEER WORKFLOW
 
-Step 1: Verify Helm Installation
+Step 1: Verify Helm Installation at the Machine level where execute the kubernetes
 
 wget https://get.helm.sh/helm-v3.18.6-linux-amd64.tar.gz
 tar -xzf helm-v3.18.6-linux-amd64.tar.gz
