@@ -9,7 +9,10 @@ sudo mv linux-amd64/helm /usr/local/bin/
 helm version
 
 Step 2: Add Helm Repository (Example: Bitnami)
-helm repo add bitnami https://charts.bitnami.com/bitnami
+"A Helm repository stores Helm charts, just like Docker Hub stores Docker images.
+We use helm repo add to add a repository to our local Helm client so that we can search, download, and install pre-built applications like NGINX, MySQL, Redis, and Jenkins using Helm.
+
+helm repo add bitnami https://charts.bitnami.com/bitnami  
 
 Step 3: Update Helm Repository
 helm repo update
