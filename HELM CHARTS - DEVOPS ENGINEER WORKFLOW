@@ -67,29 +67,29 @@ helm lint myapp            Checks your Helm chart for errors before deployment. 
 
 Step 9: Generate Kubernetes YAML
 
-helm template myapp
+helm template myapp          //helm template myapp generates the final Kubernetes YAML manifests from the Helm chart without deploying them to the Kubernetes cluster.
 
 Step 10: Install Helm Chart
 
-helm install banking-app ./myapp
+helm install banking-app ./myapp           //Deploys the Kubernetes resources (Deployment, Service, Pods, etc.) to the Kubernetes cluster.
 
 Step 11: Verify Installation
 
-helm list
+helm list     
 
-kubectl get all
+kubectl get all               // List all the installed resources using helm
 
 Step 12: Upgrade Application
 
-helm upgrade banking-app ./myapp
+helm upgrade banking-app ./myapp        //Updates the existing application in Kubernetes
 
 Step 13: Check Release Status
 
-helm status banking-app
+helm status banking-app   // helps to find the deployment status
 
 Step 14: View Release History
 
-helm history banking-app
+helm history banking-app      //View release versions
 
 Step 15: Rollback
 
