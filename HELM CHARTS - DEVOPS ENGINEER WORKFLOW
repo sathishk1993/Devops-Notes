@@ -21,6 +21,8 @@ Step 4: Search Available Charts
 helm search repo nginx
 helm search repo mysql
 
+helm install my-nginx bitnami/nginx
+
 Step 5: Create a New Helm Chart
 helm create myapp
 
