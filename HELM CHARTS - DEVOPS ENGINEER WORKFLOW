@@ -126,6 +126,9 @@ helm uninstall banking-app
 8. helm history    → View release versions
 9. helm rollback   → Restore previous version
 10. helm uninstall → Remove application
+11. helm create   → Create Helm chart structure
+12. helm template → Generate Kubernetes YAML
+13. helm install  → Deploy to Kubernetes
 
 Real-Time DevOps Responsibilities:
 
