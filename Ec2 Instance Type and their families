@@ -1,0 +1,22 @@
+EC2 Instance Family
+•  T series → Small workloads, development, burstable performance. 
+•  M series → General-purpose applications. 
+•  C series → CPU-intensive applications. 
+•  R series → Memory-intensive applications. 
+•  I series → High-speed local SSD storage. 
+•  P/G series → GPU, AI/ML, graphics.
+
+
+EC2 Instance Type
+t2.micro
+t3.small
+t3.medium
+
+m5.large
+m5.xlarge
+
+c5.large
+c6i.xlarge
+
+r5.large
+r6i.xlarge
