@@ -63,7 +63,7 @@ secret.yaml
 
 Step 8: Validate Helm Chart
 
-helm lint myapp
+helm lint myapp            Checks your Helm chart for errors before deployment.   Like checking Java code with a compiler before running it.
 
 Step 9: Generate Kubernetes YAML
 
